@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Profile Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Facebook Profile Viewer</h1>
+    <p>Enter your Facebook Access Token</p>
+
+    <input 
+      type="text" 
+      id="accessToken" 
+      placeholder="Paste your Access Token here"
+    />
+
+    <button id="fetchBtn">Fetch Profile</button>
+
+    <div id="result" class="hidden">
+      <img id="profilePic" alt="Profile Picture">
+      <h2 id="name"></h2>
+      <p id="fbId"></p>
+    </div>
+
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
